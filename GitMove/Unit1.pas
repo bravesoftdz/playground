@@ -10,7 +10,9 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     Memo1: TMemo;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,13 +25,18 @@ var
 implementation
 
 uses
-  Unit2;
+  Unit2, Unit3;
 
 {$R *.dfm}
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   Memo1.Lines.Add(Unit2.GetText);
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  HelloWorld;
 end;
 
 end.
