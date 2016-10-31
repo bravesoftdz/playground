@@ -22,11 +22,14 @@ var
 
 implementation
 
+uses
+  Unit2;
+
 {$R *.dfm}
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  Memo1.Lines.Add('Hello World!');
+  Memo1.Lines.Add(Unit2.GetText);
 end;
 
 end.
