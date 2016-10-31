@@ -11,7 +11,7 @@ implementation
 
 procedure HelloWorld;
 begin
-  ShowMessage('Hello World!');
+  MessageDlg('Hello World!', mtInformation, [mbOK], 0);
 end;
 
 end.
